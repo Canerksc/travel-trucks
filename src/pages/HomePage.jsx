@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
-import heroImage from "./Picture (1).png";
+import heroImage from "./Picture (1).png?url";
 
 const HomePage = () => {
   return (
     <div 
       className={styles.hero}
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${heroImage}')`
       }}
     >
       <h1 className={styles.title}>Campers of your dreams</h1>
