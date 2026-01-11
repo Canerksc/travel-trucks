@@ -12,6 +12,7 @@ import {
 
 
 import css from './DetailsPage.module.css';
+import locationIcon from '../assets/Location.svg';
 
 
 import BookingForm from '../components/BookingForm/BookingForm';
@@ -50,7 +51,10 @@ const DetailsPage = () => {
           <span className={css.rating}>
             ⭐ {camper.rating} ({camper.reviews?.length} Reviews)
           </span>
-          <span className={css.location}>📍 {camper.location}</span>
+          <span className={css.location}>
+            <img src={locationIcon} alt="location" className={css.locationIcon} />
+            {camper.location}
+          </span>
         </div>
 
         <div className={css.price}>
