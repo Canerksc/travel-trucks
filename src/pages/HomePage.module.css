@@ -1,0 +1,39 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Picture\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 64px;
+  color: white;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.ctaButton {
+  background-color: #E44848;
+  color: white;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 200px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #D84343;
+}

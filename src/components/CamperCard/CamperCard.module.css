@@ -1,0 +1,155 @@
+.card {
+  display: flex; 
+  flex-direction: row;
+  border: 1px solid #10182833; 
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 24px;
+  gap: 24px;
+  width: 100%;
+  max-width: 888px; 
+  box-sizing: border-box;
+}
+
+.imageWrapper {
+  width: 290px;
+  height: 310px;
+  flex-shrink: 0; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #101828;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.heartBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.subHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #101828;
+}
+
+.rating, .location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starIcon {
+  color: #FFC531; 
+}
+
+.ratingText {
+  text-decoration: underline; 
+}
+
+.mapIcon {
+  color: #101828;
+}
+
+
+.description {
+  color: #475467;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px; 
+}
+
+
+.categoriesWrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+
+.button {
+  background-color: #E44848; 
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 200px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #D84343;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; 
+    height: auto;
+  }
+  .imageWrapper {
+    width: 100%;
+    height: 200px;
+  }
+  .description {
+    white-space: normal; 
+  }
+}
