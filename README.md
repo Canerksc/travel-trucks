@@ -25,7 +25,7 @@ TravelTrucks is a camper rental application built with React and Vite. Users can
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Canerksc/travel-trucks.git)
+    git clone https://github.com/Canerksc/travel-trucks.git
     ```
 
 2.  **Navigate to the project directory:**
